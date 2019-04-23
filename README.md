@@ -1,68 +1,57 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# General Assembly - Project 2
 
-## Available Scripts
+#### Project Name: CircumVelo
 
-In the project directory, you can run:
+## Project Overview
+This is my second project assignment for General Assembly's Software Engineering Immersive program. Here are the requirements: 
 
-### `npm start`
+    *Be a working, interactive, React application.
+    *Pull data into the application using an API
+    *Have at least 3 separate components, in a components folder in your application.
+    *Be built using Create React App.
+    *Be deployed via Heroku.
+    *Be styled with CSS.
+    *Use Flexbox or CSS Grid.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Description
+I am creating a world map of free bike sharing locations.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+###Project Schedule table
 
-### `npm test`
+Day | Deliverable
+-----------------|----------------------------------------
+Day 1: Friday    | Idea, Wireframes, Research
+Day 2: Saturday    | Component Hierarchy, Pseudo Code
+Day 3: Sunday   | Coding
+Day 4: Monday | Coding
+Day 5: Tuesday  | Working Prototype, Testing
+Day 6: Wednesday    | Editing, Final Testing
+Day 6: Thursday    | App Completed, Deployment
+Day 6: Friday    | Presentation
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### App Components
+	*Citybik.es API
+	*MapBox API 
+	*Keyword Search/Submit
+	*React Map
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### Technologies Being Used:
+For this project, I will be using React, Node.js, and a Twitter API. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Implementation Problems: Retrieving the info from the bike sharing api and adding it to the map.
 
-### `npm run eject`
+Explanation to Solve the Problems:  The bike sharing api includes longitude and latitude, so the react map package can send that info to the mapbox component. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### MVP
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Post MVP
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### Wireframes
+Wireframe and component hierarchy will be added.
 
 ### Deployment
+This project will be deployed on Heroku.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
