@@ -3,6 +3,7 @@ import ReactMapGL from 'react-map-gl';
 
 const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
  
+
  mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 const map = new mapboxgl.Map({
 container: 'mapbox',

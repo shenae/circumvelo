@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './BikeSharing.css';
  
-
 class BikeSharing extends Component {
     constructor() {
         super();
