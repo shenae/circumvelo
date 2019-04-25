@@ -40,14 +40,14 @@ class MapBox extends Component {
           longitude: viewport.longitude,
         },
       }))
-      //console.log('this is viewport',this.state.viewport)
+      
     }
 
     _renderMarker(bike, i) {
-    //  console.log({bike})
+    
       const lat = bike.location.latitude;
       const lng = bike.location.longitude;
-      // console.log(lat, lng);
+   
       
       const key= `bike-${i}`;
       return (
@@ -81,12 +81,29 @@ class MapBox extends Component {
     
       const { viewport } = this.state;
       const { bikeshare } = this.props;
-      console.log("Mapbox props.DropDownhandler: " + this.props.DropDownhandler);
-      console.log("Mapbox bikeshare: " + bikeshare);
+      // console.log(this.props);
        if (bikeshare) {
         return (
           <div>
-          <ReactMapGL
+
+<div class="tile is-ancestor">
+  <div class="tile is-4 is-vertical is-parent">
+    <div class="tile is-child box">
+      <p class="title">One</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+    </div>
+    <div class="tile is-child box">
+      <p class="title">By Country</p>
+      <DropDown DropDownhandler={this.props.DropDownhandler} changeViewport={this.changeViewport}/><br></br>
+      <p>Select a country from the dropdown list.</p>
+    </div>
+  </div>
+  <div class="tile is-parent">
+    <div class="tile is-child box">
+      <p class="title">Map</p>
+      <MapBox bikeshare={this.state.data} DropDownhandler={this.DropDownHandler} />
+    
+      <ReactMapGL
             {...viewport}
             onViewportChange={(viewport) => this.setState({viewport})}
             mapboxApiAccessToken={mapboxglToken}
@@ -94,6 +111,11 @@ class MapBox extends Component {
             { bikeshare.map(this._renderMarker) }
             {this._renderPopup()}
           </ReactMapGL>
+          </div>
+    </div>
+  
+</div>
+
           </div>
            
         )
