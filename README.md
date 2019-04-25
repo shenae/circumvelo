@@ -14,7 +14,7 @@ This is my second project assignment for General Assembly's Software Engineering
     *Use Flexbox or CSS Grid.
 
 ### Description
-I am creating a world map of free bike sharing locations.
+CircumVelo is a world map of bike sharing locations.
 
 ###Project Schedule table
 
@@ -38,16 +38,17 @@ Day 6: Friday    | Presentation
 	*React Map
 
 ### Technologies Being Used:
-For this project, I will be using React, Node.js, and a Twitter API. 
+For this project, I will be using React, Node.js, and Bulma. 
 
 Implementation Problems: Retrieving the info from the bike sharing api and adding it to the map.
 
 Explanation to Solve the Problems:  The bike sharing api includes longitude and latitude, so the react map package can send that info to the mapbox component. 
 
 ### MVP
-
+This app will have an interactive map and a dropdown list of countries. 
 
 ### Post MVP
+
 
 ### Wireframes
 Wireframe and component hierarchy will be added.

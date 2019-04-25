@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.nav {
+    text-decoration-color: purple;
+    font-family: 'Poppins', sans-serif;
+}
+
+#has-text-purple {
+    color: purple;
+}

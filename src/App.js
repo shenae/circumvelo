@@ -3,6 +3,7 @@ import './App.css';
 import MapBox from './components/MapBox/MapBox';
 import DropDown from './components/MapBox/DropDown';
 import NavBar from './components/NavBar/NavBar.js';
+import Footer from './components/Footer';
 
 
 class App extends Component {
@@ -22,12 +23,12 @@ class App extends Component {
 
   getFreeBikes = () => { 
     let BIKE_URL = 'https://api.citybik.es/v2/networks?fields=company,name,location/'; 
-  fetch(BIKE_URL)
-      .then(response => {
-      return response.json()
-      })
-      .then( async data => {
-          await this.setState({
+      fetch(BIKE_URL)
+        .then(response => {
+        return response.json()
+        })
+        .then( async data => {
+              await this.setState({
               data: data.networks,
               name: data.name,
               company: data.company,
@@ -37,7 +38,7 @@ class App extends Component {
               longitude: data.longitude
           })
           
-      }).then(
+        }).then(
         this.filterData()
       )
   };
@@ -79,7 +80,7 @@ class App extends Component {
         <NavBar />
         <MapBox bikeshare={this.state.data} DropDownhandler={this.DropDownHandler} />
     </div>
-  
+   
     );
   }
 }

@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
+import './NavBar.css';
 
 class NavBar extends Component {
   render() {
     return (
-  
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    {/* <a class="navbar-item" href="https://bulma.io"> */}
-    <i class="fas fa-bicycle"></i>
-      {/* <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-    </a> */}
+<nav class="navbar is-warning" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand" id="has-text-purple">
+    <i class="fas fa-bicycle fa-3x"></i>
+    <h1 class="title is-1" id="has-text-purple">CircumVelo</h1>
 
     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
@@ -18,19 +16,9 @@ class NavBar extends Component {
     </a>
   </div>
 
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item">
-        Home
-      </a>
-
-      <a class="navbar-item">
-        Documentation
-      </a>
-
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
-          More
+          About
         </a>
 
         <div class="navbar-dropdown">
@@ -38,28 +26,18 @@ class NavBar extends Component {
             About
           </a>
           <a class="navbar-item">
-            Jobs
-          </a>
-          <a class="navbar-item">
             Contact
           </a>
-          <div class="navbar-divider">
-          <a class="navbar-item">
-            Report an issue
-          </a>
-        </div>
       </div>
-    </div>
+   
     </div>
 
     <div class="navbar-end">
       <div class="navbar-item">
       </div>
     </div>
-  </div>
+
   </nav>
-
-
 );
   }
 }
