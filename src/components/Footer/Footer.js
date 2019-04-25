@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Footer.css';
 
 class Footer extends Component {
   render() {
@@ -6,8 +7,7 @@ class Footer extends Component {
 
 <footer class="footer">
   <div class="content has-text-centered">
-    <p>Made by <a href="http://github/shenae">Shenae Simmons</a></p>
-    <p> Styled with <a href="http://bulma.io"><strong>Bulma</strong></a></p>
+    <p>Made by <a href="http://github/shenae" id="has-text-purple">Shenae Simmons</a> Styled with <a href="http://bulma.io" id="has-text-purple"><strong>Bulma</strong></a></p>
   </div>
 </footer>
 

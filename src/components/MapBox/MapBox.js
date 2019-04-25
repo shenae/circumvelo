@@ -6,8 +6,6 @@ import DropDown from './DropDown';
 import './MapBox.css';
 
 
-// https://api.citybik.es/v2/networks?fields=company,name,location
-
 const mapboxglToken = process.env.REACT_APP_MAPBOX;
 
 class MapBox extends Component {
@@ -17,8 +15,8 @@ class MapBox extends Component {
         viewport: {
           width: '50vw',
           height: '60vh',
-          latitude: 52.520008,
-          longitude: 13.404954,
+          latitude: 40.7306,
+          longitude: -73.968285,
           zoom: 7
         },
         popupInfo: null
@@ -29,9 +27,7 @@ class MapBox extends Component {
     };
 
     changeViewport = async (viewport) => {
-
       await this.setState(prevState => ({
-        
         viewport: {
           ...prevState.viewport,
           latitude: viewport.latitude,
@@ -42,7 +38,6 @@ class MapBox extends Component {
     }
 
     _renderMarker(bike, i) {
-    
       const lat = bike.location.latitude;
       const lng = bike.location.longitude;
       const key= `bike-${i}`;
@@ -80,15 +75,21 @@ class MapBox extends Component {
       const { bikeshare } = this.props;
        if (bikeshare) {
         return (
-            <div class="tile is-ancestor">
-            <div class="tile is-2 is-vertical is-parent">
-            <p class="title-4">By Country</p>
+          <div class="tile is-ancestor">
+            <div class="tile is-4 is-vertical is-parent">
+              <div class="tile is-child box">
+              <h4 class="title is-4">By Country </h4>
               <DropDown DropDownhandler={this.props.DropDownhandler} changeViewport={this.changeViewport}/><br></br>
-            <p>Select a country from the dropdown list.</p>
+                <p>Select a country from the dropdown list to view the bike sharing locations in the map.</p>
             </div>
+            <div class="tile is-child box">
+            <h4 class="title is-4">Bike Sharing </h4>
+              <p>Biking while traveling is more eco-friendly than taking a taxi.  This app lists bike sharing sites by country. Click on any of the pins on the map to see the bike sharing company name, city and country.</p>
+              </div>
+              </div>
             <div class="tile is-parent">
             <div class="tile is-child box">
-            <p class="title-4">Map</p>
+            <h4 class="title is-4">Map</h4>
               <ReactMapGL
               {...viewport}
               onViewportChange={(viewport) => this.setState({viewport})}
@@ -97,9 +98,9 @@ class MapBox extends Component {
               { bikeshare.map(this._renderMarker) }
               {this._renderPopup()}
               </ReactMapGL>
+              </div>
             </div>
             </div>
-          </div>
            
         )
        } else {

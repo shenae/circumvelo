@@ -3,8 +3,7 @@ import './App.css';
 import MapBox from './components/MapBox/MapBox';
 import DropDown from './components/MapBox/DropDown';
 import NavBar from './components/NavBar/NavBar.js';
-import Footer from './components/Footer';
-
+import Footer from './components/Footer/Footer';
 
 class App extends Component {
   constructor() {
@@ -79,6 +78,7 @@ class App extends Component {
     <div className="App">
         <NavBar />
         <MapBox bikeshare={this.state.data} DropDownhandler={this.DropDownHandler} />
+        <Footer />
     </div>
    
     );

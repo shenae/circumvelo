@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-.nav {
-    text-decoration-color: purple;
+.navbar-brand {
+    text-align: center;
+    justify-content: center;
     font-family: 'Poppins', sans-serif;
+    padding: 10px;
 }
 
 #has-text-purple {

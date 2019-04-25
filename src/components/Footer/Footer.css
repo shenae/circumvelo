@@ -5,6 +5,10 @@ a {
     font-family: 'Poppins', sans-serif;
 }
 
-footer{
-    background-color: white;
+#has-text-purple {
+    color: purple;
+}
+
+footer {
+    max-height: 40px;
 }

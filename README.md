@@ -42,7 +42,7 @@ For this project, I will be using React, Node.js, and Bulma.
 
 Implementation Problems: Retrieving the info from the bike sharing api and adding it to the map.
 
-Explanation to Solve the Problems:  The bike sharing api includes longitude and latitude, so the react map package can send that info to the mapbox component. 
+Explanation to Solve the Problems:  The bike sharing api includes longitude and latitude, so the react map package and Mapbox API can send that info to the mapbox component. 
 
 ### MVP
 This app will have an interactive map and a dropdown list of countries. 
@@ -54,5 +54,5 @@ This app will have an interactive map and a dropdown list of countries.
 Wireframe and component hierarchy will be added.
 
 ### Deployment
-This project will be deployed on Heroku.
+https://circumvelo.herokuapp.com/
 
