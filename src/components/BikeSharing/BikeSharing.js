@@ -1,38 +1,61 @@
 import React, { Component } from 'react';
 import './BikeSharing.css';
+import ReactMapGL, { Marker, Popup } from 'react-map-gl';
+
  
 class BikeSharing extends Component {
     constructor() {
         super();
         this.state = {
             data: [],
-          name: '',
-          company: '',
-          city: '',
-          country: '',
-          free_bikes: 0
-          
+            name: '',
+            company: '',
+            city: '',
+            country: 'DE',
+            latitude: 0,
+            longitude: 0,
+
         }
+    
       }
-getFreeBikes () { 
-  let bike_URL = 'http://api.citybik.es/v2/networks'; 
-fetch(bike_URL)
-    .then(response => response.json())
-    .then(data => {
-    //   console.log(data.networks);
-        this.setState({
-            data: data.networks
-            // name: data.name,
-            // company: data.company,
-            // city: data.city,
-            // country: data.country,
-            // free_bikes: data.free_bikes
-        })
-    })
-};
-componentDidMount () {
+// getFreeBikes = () => { 
+//   let bike_URL = 'https://api.citybik.es/v2/networks?fields=company,name,location/'; 
+// fetch(bike_URL)
+//     .then(response => {
+//         console.log("Fetch completeeee")
+//         return response.json()
+//     })
+//     .then(data => {
+// //    console.log(data.networks);
+//         this.setState({
+//             data: data.networks,
+//             name: data.name,
+//             company: data.company,
+//             city: data.city,
+//             country: data.country,
+//             latitude: data.latitude,
+//             longitude: data.longitude
+//         })
+        
+//     })
+    
+// };
+componentDidMount = () => {
+    //console.log('this is the country :', this.state);
   this.getFreeBikes()
 }
+
+// _renderMarker(getFreeBikes, i) {
+//     // console.log(getFreeBikes)
+//     const lats = getFreeBikes.geometry.coordinates[1];
+//     const lngs = getFreeBikes.geometry.coordinates[0];
+//     console.log(lats, lngs)
+//     return (
+//       <Marker key={`getFreeBikes-${i}`} longitude={lngs} latitude={lats} >
+//         <getFreeBikesPin size={10} onClick={() => this.setState({popupInfo: getFreeBikes})} />
+//       </Marker>
+//     );
+//   }
 
     render () {
 
