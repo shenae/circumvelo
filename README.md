@@ -45,7 +45,7 @@ Implementation Problems: Retrieving the info from the bike sharing api and addin
 Explanation to Solve the Problems:  The bike sharing api includes longitude and latitude, so the react map package and Mapbox API can send that info to the mapbox component. 
 
 ### MVP
-This app will have an interactive map and a dropdown list of countries. 
+This app will have an interactive map and a dropdown list of countries. The MVP is listed at https://circumvelo.herokuapp.com/.
 
 ### Post MVP
 Adding a search bar for country or city.
@@ -54,5 +54,5 @@ Adding a search bar for country or city.
 Wireframe and component hierarchy will be added.
 
 ### Deployment
-https://circumvelo.herokuapp.com/
+This project is hosted on GitHub pages at https://shenae.github.io/circumvelo/. 
 
