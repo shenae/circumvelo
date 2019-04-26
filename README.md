@@ -14,7 +14,7 @@ This is my second project assignment for General Assembly's Software Engineering
     *Use Flexbox or CSS Grid.
 
 ### Description
-CircumVelo is a world map of bike sharing locations.
+Derived from the Latin word meaning "cover around/envelope," CircumVelo is a world map of bike sharing locations.
 
 ###Project Schedule table
 
@@ -48,7 +48,7 @@ Explanation to Solve the Problems:  The bike sharing api includes longitude and 
 This app will have an interactive map and a dropdown list of countries. 
 
 ### Post MVP
-
+Adding a search bar for country or city.
 
 ### Wireframes
 Wireframe and component hierarchy will be added.

@@ -56,7 +56,6 @@ _renderMarker(getFreeBikes, i) {
     }
 
 
-
 }
 
 export default BikeSharing;

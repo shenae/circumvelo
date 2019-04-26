@@ -3,7 +3,7 @@ import ReactMapGL, { Marker, Popup } from 'react-map-gl';
 import BikeSharePin from './BikeSharingPin.js';
 import BikeShareInfo from './BikeShareInfo';
 import DropDown from './DropDown';
-import './MapBox.css';
+import SearchForm from '../BackupFiles/SearchForm/SearchForm.js';
 
 
 const mapboxglToken = process.env.REACT_APP_MAPBOX;
@@ -83,8 +83,8 @@ class MapBox extends Component {
                 <p>Select a country from the dropdown list to view the bike sharing locations in the map.</p>
             </div>
             <div class="tile is-child box">
-            <h4 class="title is-4">Bike Sharing </h4>
-              <p>Biking while traveling is more eco-friendly than taking a taxi.  This app lists bike sharing sites by country. Click on any of the pins on the map to see the bike sharing company name, city and country.</p>
+            <h4 class="title is-4">About CircumVelo </h4>
+              <p>Biking while traveling abroad is more eco-friendly than taking a taxi.  This app lists bike sharing sites by country. Click on any of the pins on the map to see the bike sharing company name, city and country.</p>
               </div>
               </div>
             <div class="tile is-parent">

@@ -16,6 +16,7 @@ export default function DropDown (props) {
         <option value="BG">Bulgaria</option>
         <option value="CA">Canada</option>
         <option value="CL">Chile</option>
+        <option value="CO">Columbia</option>
         <option value="HR">Croatia</option>
         <option value="CY">Cyprus</option>
         <option value="DK">Denmark</option>
