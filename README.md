@@ -26,8 +26,8 @@ Day 3: Sunday   | Coding
 Day 4: Monday | Coding
 Day 5: Tuesday  | Working Prototype, Testing
 Day 6: Wednesday    | Editing, Final Testing
-Day 6: Thursday    | App Completed, Deployment
-Day 6: Friday    | Presentation
+Day 7: Thursday    | App Completed, Deployment
+Day 8: Friday    | Presentation
 
 
 
