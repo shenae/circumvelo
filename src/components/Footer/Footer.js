@@ -7,7 +7,7 @@ class Footer extends Component {
 
 <footer class="footer">
   <div class="content has-text-centered">
-    <p>Made by <a href="http://www.github/shenae" id="has-text-purple">Shenae Simmons</a></p>
+    <p>Made by <a href="http://www.github.com/shenae" id="has-text-purple">Shenae Simmons</a></p>
   </div>
 </footer>
 
